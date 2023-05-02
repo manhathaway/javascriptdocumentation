@@ -1,0 +1,172 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    color: rgb(28, 40, 66);
+    background-image: linear-gradient(rgb(133, 148, 179),rgb(163, 178, 209));
+    margin: 0 auto;
+  }
+  
+  header {
+    text-align: center;
+    margin: 50px 0;
+    color: rgb(28, 40, 66);
+  }
+  
+  header h1 {
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    background-color: rgba(28, 40, 66, 0.75);
+    color: rgb(188, 200, 226);
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+  
+  p:not(header p), li {
+    margin: 25px;
+  }
+  
+  code p {
+    background-color: rgba(188, 200, 226, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  table {
+    margin: 25px;
+    border-radius: 5px;
+    width: calc(100% - 50px);
+  }
+  
+  table th {
+    padding: 15px;
+    background-color: rgba(188, 200, 226, 0.5);
+    letter-spacing: 1px;
+  }
+  
+  table th:first-of-type {
+    text-align: right;
+    border-radius: 15px 0 0 0;
+  }
+  
+  table th:last-of-type {
+    text-align: left;
+      border-radius: 0 15px 0 0;
+  }
+  
+  table td {
+    background-color: rgba(188, 200, 226, 0.25);
+    padding: 10px;
+  }
+  
+  table td:first-of-type {
+    text-align: right;
+    padding-left: 20px;
+  }
+  
+  table td:last-of-type {
+    padding-right: 20px;
+  }
+  
+  table tr:last-of-type td:first-of-type {
+    border-radius: 0 0 0 15px;
+  }
+  
+  table tr:last-of-type td:last-of-type {
+    border-radius: 0 0 15px 0;
+  }
+  
+  footer {
+    padding: 1px;
+    text-align: center;
+    background-color: rgba(188, 200, 226, 0.25);
+    width: 100%;
+  }
+  
+  #nav-background {
+    background-color: rgb(188, 200, 226);
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  #navbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 25px;
+    width: 100%;
+  }
+  
+  #reference button {
+    cursor: pointer;
+    border: none;
+    padding: 7.5px;
+    border-radius: 7.5px;
+    color: rgb(28, 40, 66);
+    background-color: rgba(188, 200, 226, 0.5);
+  }
+  
+  #introduction ul,
+  #preface ul,
+  #while-statements ul
+  #function-declarations ul {
+    padding: 10px 20px !important;
+  }
+  
+  #introduction ul,
+  #preface ul,
+  #hello-world > div > div,
+  #declaring-variables > div > div,
+  #variable-scope > div > div,
+  #constants > div > div,
+  #if-else-statements > div > div,
+  #while-statements > div > div,
+  #while-statements ul,
+  #function-declarations > div > div,
+  #function-declarations ul {
+    background-color: rgba(188, 200, 226, 0.25);
+    padding: 5px;
+    margin: 25px;
+    border-radius: 15px;;
+  }
+  
+  .nav-link {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background-color: rgb(48, 60, 86);
+    color: rgb(188, 200, 226);
+    cursor: pointer;
+  }
+  
+  .nav-link:hover {
+    background-color: rgb(68, 80, 106);
+  }
+  
+  .main-section {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  
+  @media screen and (max-width: 925px) {
+    #navbar {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      justify-content: flex-start;
+    }
+  
+    .nav-link {
+      height: 50px;
+    }
+  }
