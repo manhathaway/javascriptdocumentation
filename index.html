@@ -7,14 +7,16 @@
     <title>Technical Documentation Page</title>
   </head>
   <body>
-    <header>
+    <header id="main-header">
       <h1>Javascript Documentation</h1>
       <p>Your quickstart guide to the Javascript coding language.</p>
     </header>
     <main id="main-doc">
       <div id="nav-bounds">
         <section class="main-section" id="introduction">
-          <h2>Introduction</h2>
+          <header class="section-header">
+            <h2>Introduction</h2>
+          </header>
           <div>
             <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
             <p>JavaScript contains a standard library of objects, such as arrays, dates, and math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
@@ -25,7 +27,9 @@
           </div>
         </section>
         <section class="main-section" id="preface">
-          <h2>Preface</h2>
+          <header class="section-header">
+            <h2>Preface</h2>
+          </header>
           <div>
             <p>This guide assumes you have the following basic background:
   </p>
@@ -36,16 +40,20 @@
             </ul>
           </div>
         </section>
-        <section class="main-section" id="javascript-and-java">
-          <h2>Javascript & Java</h2>
+        <section class="main-section" id="javascript_and_java">
+          <header class="section-header">
+            <h2>Javascript and Java</h2>
+          </header>
           <div>
             <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
             <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
             <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
           </div>
         </section>
-        <section class="main-section" id="hello-world">
-          <h2>Hello World</h2>
+        <section class="main-section" id="hello_world">
+          <header class="section-header">
+            <h2>Hello World</h2>
+          </header>
           <div>
             <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
             <div>
@@ -55,16 +63,20 @@
             </div>
           </div>
         </section>
-        <section class="main-section">
-        <h2 id="variables">Variables</h2>
-        <div>
+        <section class="main-section" id="variables">
+          <header class="section-header">
+            <h2>Variables</h2>
+          </header>
+          <div>
             <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
             <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
             <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
         </div>
         </section>
-        <section class="main-section" id="declaring-variables">
-          <h2>Declaring Variables</h2>
+        <section class="main-section" id="declaring_variables">
+           <header class="section-header">
+            <h2>Declaring Variables</h2>
+          </header>
           <div>
             <p>You can declare a variable in three ways:</p>
             <div>
@@ -83,8 +95,10 @@
             </div>
           </div>
         </section>
-        <section class="main-section" id="variable-scope">
-          <h2>Variable Scope</h2>
+        <section class="main-section" id="variable_scope">
+          <header class="section-header">
+            <h2>Variable Scope</h2>
+          </header>
           <div>
             <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
             <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within.</p>
@@ -97,15 +111,19 @@
             </div>
           </div>
         </section>
-        <section class="main-section" id="global-variables">
-          <h2>Global Variables</h2>
+        <section class="main-section" id="global_variables">
+          <header class="section-header">
+            <h2>Global Variables</h2>
+          </header>
           <div>
             <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
             <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
           </div>
         </section>
         <section class="main-section" id="constants">
-          <h2>Constants</h2>
+          <header class="section-header">
+            <h2>Constants</h2>
+          </header>
           <div>
             <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
             <div>
@@ -124,8 +142,10 @@
             </div>
           </div>
         </section>
-        <section class="main-section"  id="data-types">
-          <h2>Data Types</h2>
+        <section class="main-section"  id="data_types">
+          <header class="section-header">
+            <h2>Data Types</h2>
+          </header>
           <div>
             <p>The latest ECMAScript standard defines seven data types.</p>
             <p>One object, and six data types which are primitives:</p>
@@ -162,8 +182,10 @@
             <p>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.</p>
           </div>
         </section>
-        <section class="main-section"  id="if-else-statements">
-          <h2>If... Else Statements</h2>
+        <section class="main-section"  id="if_-_else_statements">
+          <header class="section-header">
+            <h2>If - Else Statements</h2>
+          </header>
           <div>
             <p>Use the 'if statement' to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false.</p>
             <div>
@@ -188,8 +210,10 @@
             </div>
           </div>
         </section>
-        <section class="main-section"  id="while-statements">
-          <h2>While Statements</h2>
+        <section class="main-section"  id="while_statements">
+          <header class="section-header">
+            <h2>While Statements</h2>
+          </header>
           <div>
             <p>A while statement executes its statements as long as a specified condition evaluates to true.</p>
             <div>
@@ -212,8 +236,10 @@
             </div>
           </div>
         </section>
-        <section class="main-section" id="function-declarations">
-          <h2>Function Declarations</h2>
+        <section class="main-section" id="function_declarations">
+          <header class="section-header">
+            <h2>Function Declarations</h2>
+          </header>
           <div>
             <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
             <ul>
@@ -235,55 +261,34 @@
           </div>
         </section>
         <section class="main-section" id="reference">
-          <h2>Reference</h2>
+          <header class="section-header">
+            <h2>Reference</h2>
+          </header>
           <div>
-            <p>All documentation from this page is sourced from <a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide><button>mdn web docs_</button></a>
+            <p>All documentation from this page is sourced from <a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide>mdn web docs_</a>
           </div>
         </section>
         <div id="nav-background">
           <nav id="navbar">
-            <a href="#introduction">
-              <button class="nav-link">Introduction</button>
-            </a>
-            <a href="#preface">
-              <button class="nav-link">Preface</button>
-            </a>
-            <a href="#javascript-and-java">
-              <button class="nav-link">Javascript & Java</button>
-            </a>
-            <a href="#hello-world">
-              <button class="nav-link">Hello World</button>
-            </a>
-            <a href="#variables">
-              <button class="nav-link">Variables</button>
-            </a>
-            <a href="#declaring-variables">
-              <button class="nav-link">Declaring Variables</button>
-            </a>
-            <a href="#variable-scope">
-              <button class="nav-link">Variable Scope</button>
-            </a>
-            <a href="#global-variables">
-              <button class="nav-link">Global Variables</button>
-            </a>
-            <a href="#constants">
-              <button class="nav-link">Constants</button>
-            </a>
-            <a href="#data-types">
-              <button class="nav-link">Data Types</button>
-            </a>
-            <a href="#if-else-statements">
-              <button class="nav-link">If... Else Statements</button>
-            </a>
-            <a href="#while-statements">
-              <button class="nav-link">While Statements</button>
-            </a>
-            <a href="#function-declarations">
-              <button class="nav-link">Function Declarations</button>
-            </a>
-            <a href="#reference">
-              <button class="nav-link">Reference</button>
-            </a>
+            <header id="nav-header">
+              <p>Navigation</p>
+            </header>
+            <section id="nav-links">
+              <a class="nav-link" href="#introduction">Introduction</a>
+              <a class="nav-link" href="#preface">Preface</a>
+              <a class="nav-link" href="#javascript_and_java">Javascript and Java</a>
+              <a class="nav-link" href="#hello_world">Hello World</a>
+              <a class="nav-link" href="#variables">Variables</a>
+              <a class="nav-link" href="#declaring_variables">Declaring Variables</a>
+              <a class="nav-link" href="#variable_scope">Variable Scope</a>
+              <a class="nav-link" href="#global_variables">Global Variables</a>
+              <a class="nav-link" href="#constants">Constants</a>
+              <a class="nav-link" href="#data_types">Data Types</a>
+              <a class="nav-link" href="#if_-_else_statements">If - Else Statements</a>
+              <a class="nav-link" href="#while_statements">While Statements</a>
+              <a class="nav-link" href="#function_declarations">Function Declarations</a>
+              <a class="nav-link" href="#reference">Reference</a>
+            </section>
           </nav>
         </div>
       </div>
