@@ -164,6 +164,7 @@ background-color: rgb(68, 80, 106);
 
 .main-section {
 max-width: 1500px;
+min-width: 250px;
 margin: 0 auto;
 padding: 0 50px;
 }
@@ -177,6 +178,7 @@ padding: 0 50px;
 }
 
 .main-section {
-  padding: 0 25px;
+  padding: 0;
+  margin: 0 25px;
 }
 }
