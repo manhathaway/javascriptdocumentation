@@ -179,6 +179,7 @@ padding: 0 50px;
 @media screen and (max-width: 925px) {
   #nav-links {
   flex-wrap: nowrap;
+  white-space: nowrap;
   overflow-x: scroll;
   justify-content: flex-start;
   align-items: center;
