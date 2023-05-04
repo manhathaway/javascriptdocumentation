@@ -31,8 +31,7 @@
             <h2>Preface</h2>
           </header>
           <div>
-            <p>This guide assumes you have the following basic background:
-  </p>
+            <p>This guide assumes you have the following basic background:</p>
             <ul>
               <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
               <li>Good working knowledge of HyperText Markup Language (HTML).</li>
@@ -57,8 +56,7 @@
           <div>
             <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
             <div>
-              <code><p>function greetMe(yourName) { alert("Hello " + yourName); } <br>
-      greetMe("World");</p></code>
+              <code><p>function greetMe(yourName) { alert("Hello " + yourName); } <br> greetMe("World");</p></code>
               <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
             </div>
           </div>
@@ -106,8 +104,7 @@
               <p>For example, the following code will log 5 because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
               <code><p>if (true) { var x = 5; } console.log(x); // 5</p></code>
               <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
-              <code><p>if (true) { let y = 5; } console.log(y); <br>// ReferenceError: y is
-    not defined</p></code>
+              <code><p>if (true) { let y = 5; } console.log(y); <br>// ReferenceError: y is not defined</p></code>
             </div>
           </div>
         </section>
@@ -134,9 +131,7 @@
             <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
             <div>
               <p>You cannot declare a constant with the same name as a function or variable in the same scope, for example:</p>
-              <code><p>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5;<br>// THIS
-    WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
-    //statements }</p></code>
+              <code><p>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5;<br>// THIS WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements }</p></code>
               <p>However, object attributes are not protected, so the following statement is executed without problems.</p>
               <code><p>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</p></code>
             </div>
@@ -195,12 +190,9 @@
             </div>
             <div>
               <p>You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:</p>
-              <code><p>if (condition_1) { statement_1; }<br>else if (condition_2) {
-    statement_2; }<br>else if (condition_n) { statement_n; } else {
-    statement_last; }</p></code>
+              <code><p>if (condition_1) { statement_1; }<br>else if (condition_2) {statement_2; }<br>else if (condition_n) { statement_n; } else {statement_last; }</p></code>
               <p>In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:</p>
-              <code><p>if (condition) { statement_1_runs_if_condition_is_true;<br>statement_2_runs_if_condition_is_true; }<br>else {
-    statement_3_runs_if_condition_is_false;<br>statement_4_runs_if_condition_is_false; }</p></code>
+              <code><p>if (condition) { statement_1_runs_if_condition_is_true;<br>statement_2_runs_if_condition_is_true; }<br>else {statement_3_runs_if_condition_is_false;<br>statement_4_runs_if_condition_is_false; }</p></code>
             </div>
             <div>
               <p>It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:</p>
@@ -265,7 +257,8 @@
             <h2>Reference</h2>
           </header>
           <div>
-            <p>All documentation from this page is sourced from <a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide>mdn web docs_</a>
+            <p>All documentation from this page is sourced from:</p>
+            <a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide>mdn web docs_</a>
           </div>
         </section>
         <div id="nav-background">

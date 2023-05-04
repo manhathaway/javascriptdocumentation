@@ -140,6 +140,10 @@ margin: 25px;
 border-radius: 15px;;
 }
 
+#reference div p {
+  margin-bottom: 30px;
+}
+
 .section-header h2 {
 background-color: rgba(28, 40, 66, 0.75);
 color: rgb(188, 200, 226);
@@ -170,47 +174,54 @@ padding: 0 50px;
 }
 
 @media screen and (max-width: 925px) {
+  #nav-links {
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  justify-content: flex-start;
+  align-items: center;
+  }
+
+  .nav-link {
+    flex-basis: 200px;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
   p:not(header p), li {
     margin: 15px 0;
   }
+  
+  #introduction ul,
+  #preface ul,
+  #while_statements ul,
+  #function_declarations ul {
+  padding: 10px 30px !important;
+  }
 
-  #nav-links {
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  justify-content: flex-start;
-  align-items: center;
-}
+  #introduction ul,
+  #preface ul,
+  #hello_world > div > div,
+  #declaring_variables > div > div,
+  #variable_scope > div > div,
+  #constants > div > div,
+  #if_-_else_statements > div > div,
+  #while_statements > div > div,
+  #while_statements ul,
+  #function_declarations > div > div,
+  #function_declarations ul {
+  background-color: rgba(188, 200, 226, 0.25);
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 15px;;
+  }
 
-#introduction ul,
-#preface ul,
-#while_statements ul,
-#function_declarations ul {
-padding: 10px 30px !important;
-}
+  .main-section {
+    padding: 0;
+    margin: 10px;
+  }
 
-#introduction ul,
-#preface ul,
-#hello_world > div > div,
-#declaring_variables > div > div,
-#variable_scope > div > div,
-#constants > div > div,
-#if_-_else_statements > div > div,
-#while_statements > div > div,
-#while_statements ul,
-#function_declarations > div > div,
-#function_declarations ul {
-background-color: rgba(188, 200, 226, 0.25);
-padding: 10px 20px;
-margin: 10px 0;
-border-radius: 15px;;
-}
-
-.main-section {
-  padding: 0;
-  margin: 10px;
-}
-
-.main-section div {
-  margin: 0 15px;
-}
+  .main-section div {
+    margin: 0 15px;
+  }
 }
