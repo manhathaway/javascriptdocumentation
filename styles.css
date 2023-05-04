@@ -196,6 +196,11 @@ padding: 0 50px;
   p:not(header p), li {
     margin: 15px 0;
   }
+
+  table {
+    margin: 25px 0;
+    width: 100%;
+  }
   
   #introduction ul,
   #preface ul,
