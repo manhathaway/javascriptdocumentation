@@ -71,7 +71,8 @@ border-radius: 0 0 15px 0;
 footer {
 padding: 1px;
 text-align: center;
-background-color: rgba(188, 200, 226, 0.25);
+color: rgb(188, 200, 226);
+background-color: rgb(28, 40, 66);
 width: 100%;
 }
 
@@ -94,9 +95,9 @@ bottom: 0;
 #nav-header p {
 text-align: center;
 padding: 10px;
-border-bottom: 1px solid rgba(28, 40, 66, 0.25);
-margin: 15px;
+margin: 0px;
 letter-spacing: 1px;
+background-color: rgb(188, 200, 231);
 }
 
 #nav-links {
@@ -104,7 +105,12 @@ display: flex;
 justify-content: center;
 gap: 10px;
 flex-wrap: wrap;
-padding: 10px 25px 25px 25px;
+padding: 25px;
+background-color: rgb(168, 180, 211);
+}
+
+#reference div {
+  height: 90px;
 }
 
 #reference a {
