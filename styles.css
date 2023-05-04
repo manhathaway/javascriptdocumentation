@@ -170,15 +170,47 @@ padding: 0 50px;
 }
 
 @media screen and (max-width: 925px) {
-#nav-links {
+  p:not(header p), li {
+    margin: 15px 0;
+  }
+
+  #nav-links {
   flex-wrap: nowrap;
   overflow-x: auto;
   justify-content: flex-start;
   align-items: center;
 }
 
+#introduction ul,
+#preface ul,
+#while_statements ul,
+#function_declarations ul {
+padding: 10px 30px !important;
+}
+
+#introduction ul,
+#preface ul,
+#hello_world > div > div,
+#declaring_variables > div > div,
+#variable_scope > div > div,
+#constants > div > div,
+#if_-_else_statements > div > div,
+#while_statements > div > div,
+#while_statements ul,
+#function_declarations > div > div,
+#function_declarations ul {
+background-color: rgba(188, 200, 226, 0.25);
+padding: 10px 20px;
+margin: 10px 0;
+border-radius: 15px;;
+}
+
 .main-section {
   padding: 0;
-  margin: 0 25px;
+  margin: 10px;
+}
+
+.main-section div {
+  margin: 0 15px;
 }
 }
