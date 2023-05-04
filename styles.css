@@ -175,4 +175,8 @@ padding: 0 50px;
   justify-content: flex-start;
   align-items: center;
 }
+
+.main-section {
+  padding: 0 25px;
+}
 }
