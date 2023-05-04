@@ -11,6 +11,7 @@ font-family: sans-serif;
 color: rgb(28, 40, 66);
 background-image: linear-gradient(rgb(133, 148, 179),rgb(163, 178, 209));
 margin: 0 auto;
+overflow-wrap: break-word;
 }
 
 p:not(header p), li {
@@ -93,8 +94,9 @@ bottom: 0;
 #nav-header p {
 text-align: center;
 padding: 10px;
-color: rgb(188, 200, 226);
-background-color: rgba(48, 60, 86);
+border-bottom: 1px solid rgba(28, 40, 66, 0.25);
+margin: 15px;
+letter-spacing: 1px;
 }
 
 #nav-links {
@@ -114,6 +116,7 @@ color: rgb(28, 40, 66);
 background-color: rgba(188, 200, 226, 0.5);
 text-decoration: none;
 font-size: 15px;
+margin-left: 25px;
 }
 
 #introduction ul,
@@ -141,7 +144,7 @@ border-radius: 15px;;
 }
 
 #reference div p {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .section-header h2 {
@@ -179,6 +182,7 @@ padding: 0 50px;
   overflow-x: scroll;
   justify-content: flex-start;
   align-items: center;
+  text-align: center;
   }
 
   .nav-link {
@@ -214,6 +218,10 @@ padding: 0 50px;
   padding: 10px 20px;
   margin: 10px 0;
   border-radius: 15px;;
+  }
+
+  #reference a {
+    margin-left: 0;
   }
 
   .main-section {
